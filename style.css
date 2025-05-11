@@ -67,3 +67,26 @@ footer {
   text-align: center;
   padding-bottom: 2.4rem;
 }
+
+@media (width <= 80em) {
+  #page {
+    --max-width: 800px;
+    width: min(var(--max-width), 100% - 1.4rem * 2);
+  }
+  
+  main {
+    padding: 1.4rem;
+  }
+
+  img {
+    width: 100%;
+  } 
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {  
+    font-size: 2rem;
+  }
+}
